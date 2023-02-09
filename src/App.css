@@ -1,0 +1,254 @@
+.contacts-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  border-bottom: 1px solid #5c5a8a;
+  padding: 4px;
+  color: rgb(216, 211, 203);
+  height: 45px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-list:hover {
+  background-color: #5c5a8a;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.contact-name {
+  padding-left: 10px;
+  transform: scaleX(45deg);
+}
+
+.contact-lastname {
+  padding-left: 10px;
+}
+
+.avatar-contacts {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.App {
+  display: flex;
+  overflow: hidden;
+}
+
+.wrapper-contacts {
+  width: 350px;
+  max-height: 100vh;
+  border: 1px solid grey;
+  background-color: #3e3c61;
+  overflow: auto;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(../public/img/bg-telegram.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding-right: 15px;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  font-size: 22px;
+  color: #fff;
+  margin-top: 20px;
+  border-bottom: 1px solid grey;
+}
+
+.header-name {
+  padding-right: 10px;
+}
+
+.message-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  flex-direction: column;
+  gap: 10px;
+  width: 98%;
+  height: 65vh;
+}
+
+.message-input {
+  width: 99.5%;
+  height: 50px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  background-color: #3e3c61;
+  color: white;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+.message-teleg {
+  width: 100%;
+}
+
+::placeholder {
+  color: rgb(158, 155, 149);
+}
+
+.send-message {
+  width: 9%;
+  height: 54px;
+  background-color: #3e3c61;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+  border-right: 1px solid grey;
+  cursor: pointer;
+}
+
+.send-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.send-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-input {
+  width: 230px;
+  height: 25px;
+  margin: 10px 7px 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  position: relative;
+  background-color: white;
+}
+
+.search-icon {
+  position: absolute;
+  top: 12px;
+  left: 222px;
+}
+
+.message-bg {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  background-color: hsla(0, 15%, 87%, 0.356);
+  width: auto;
+  height: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px 0px 10px 10px;
+}
+
+.delete-message {
+  margin-left: 10px;
+  width: auto;
+  height: auto;
+  background-color: hsla(0, 15%, 87%, 0);
+  outline: none;
+  border: none;
+  margin-top: 2px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.messages {
+  display: flex;
+  align-items: center;
+}
+
+.delete-message:hover {
+  color: #ee2929;
+}
+
+.delete {
+  margin-left: 10px;
+}
+
+/* --- Modal --- */
+
+.modal {
+  width: 100%;
+  height: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.name-lastname {
+  width: 230px;
+  height: 25px;
+  margin: 10px 7px 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+
+.delete-contact {
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  outline: none;
+  border: none;
+  background-color: rgba(229, 229, 236, 0);
+  color: #419fd9;
+}
+
+.delete-contact:hover {
+  color: #ee2929;
+}
+
+.add-contact {
+  width: 35px;
+  height: 30px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  color: #419fd9;
+  outline: none;
+  border: none;
+  background-color: rgba(229, 229, 236, 0);
+  cursor: pointer;
+}
+
+.add-contact:hover {
+  color: #ee2929;
+}
+
+.contact-add {
+  width: 35px;
+  height: 30px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  color: #419fd9;
+  outline: none;
+  border: none;
+  background-color: rgba(229, 229, 236, 0);
+  cursor: pointer;
+}
